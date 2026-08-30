@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelMate - Sign In</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+          <a href="js/travelapp.html"
+   class="text-2xl font-bold text-blue-600">
+    TravelMate
+</a>
+            <a href="SignUp.html"
+               class="text-gray-600 hover:text-blue-600 font-medium">
+                Sign Up
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Section -->
+    <main class="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-10">
+
+        <section class="w-full max-w-5xl bg-white rounded-2xl shadow-xl overflow-hidden">
+
+            <div class="grid md:grid-cols-2">
+
+
+                <!-- Left Information Section -->
+                <div class="signup-info bg-blue-600 text-white p-10 flex flex-col justify-center">
+
+                    <h1 class="text-4xl font-bold mb-4">
+                        Welcome Back ✈️
+                    </h1>
+
+                    <p class="text-lg mb-6">
+                        Sign in to continue your travel journey
+                        and explore amazing destinations.
+                    </p>
+
+                    <ul class="space-y-4">
+
+                        <li>🌍 Discover beautiful destinations</li>
+
+                        <li>🏝️ Plan your next vacation</li>
+
+                        <li>📸 Create unforgettable memories</li>
+
+                        <li>🗺️ Explore the world</li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Sign In Form -->
+                <div class="p-8 md:p-10">
+
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">
+                        Sign In
+                    </h2>
+
+                    <p class="text-gray-500 mb-8">
+                        Enter your registered account details.
+                    </p>
+
+
+                    <form id="signinForm" novalidate>
+
+
+                        <!-- Email -->
+                        <div class="form-group">
+
+                            <label for="signinEmail">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="signinEmail"
+                                name="signinEmail"
+                                placeholder="example@mail.com"
+                                autocomplete="email"
+                            >
+
+                            <small
+                                id="signinEmailError"
+                                class="error-message">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Password -->
+                        <div class="form-group">
+
+                            <label for="signinPassword">
+                                Password
+                            </label>
+
+                            <div class="password-wrapper">
+
+                                <input
+                                    type="password"
+                                    id="signinPassword"
+                                    name="signinPassword"
+                                    placeholder="Enter your password"
+                                    autocomplete="current-password"
+                                >
+
+                                <button
+                                    type="button"
+                                    id="toggleSigninPassword"
+                                    class="password-toggle">
+                                    Show
+                                </button>
+
+                            </div>
+
+                            <small
+                                id="signinPasswordError"
+                                class="error-message">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Sign In Button -->
+                        <button
+                            type="submit"
+                            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition duration-300">
+
+                            Sign In
+
+                        </button>
+
+
+                        <!-- Login Error -->
+                        <p
+                            id="signinError"
+                            class="error-message text-center mt-4">
+                        </p>
+
+
+                        <!-- Login Success -->
+                        <p
+                            id="signinSuccess"
+                            class="success-message">
+                        </p>
+
+
+                        <!-- Signup Link -->
+                        <p class="text-center text-gray-600 mt-6">
+
+                            Don't have an account?
+
+                            <a
+                                href="SignUp.html"
+                                class="text-blue-600 font-semibold hover:underline">
+
+                                Create Account
+
+                            </a>
+
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-5">
+
+        <p>
+            © 2026 TravelMate. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+<script src="js/index.js"></script>
+
+</body>
+
+</html>
